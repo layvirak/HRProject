@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu</title>
+  <link rel="stylesheet" href="CSS/slideBar.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class="fas fa-chevron-double-left"></i>
+      </span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbfM-9TxvLrFcw1x_Mj98k2x7ubcrPhQvQw&usqp=CAU" class="logo" alt="">
+      <h3 class="hide"> HR Management</h3>
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" class="active" data-active="0">
+            <div class="icon">
+              <i class="fas fa-qrcode"></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1" onclick="changeContent('createEmployee.html');">
+          <a href="#" data-active="1">
+            <div class="icon">
+              <i class="fas fa-plus"></i>
+            </div>
+            <span class="link hide">Create Employee</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2" onclick="changeContent('employeeInfo.html');">
+          <a href="#" data-active="2">
+            <div class="icon">
+              <i class="far fa-users"></i>
+            </div>
+            <span class="link hide">Employee Info</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3" onclick="changeContent('event.html');">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class="fas fa-calendar"></i>
+            </div>
+            <span class="link hide">Event</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="4" onclick="changeContent('eventHistory.html');">
+          <a href="#" data-active="4">
+            <div class="icon">
+              <i class="fad fa-clipboard-prescription"></i>
+            </div>
+            <span class="link hide">Event History</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#" data-active="5">
+            <div class="icon">
+              <i class='bx bx-cog'></i>
+            </div>
+            <span class="link hide">Other</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="#" data-active="6">
+            <div class="icon">
+              <i class='bx bx-cog'></i>
+            </div>
+            <span class="link hide">other</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <!-- <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a> -->
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <!-- <img src="./img/face-1.png" alt=""> -->
+          <div class="admin-info">
+            <h3>Your Name</h3>
+            <h5>Admin</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class="fad fa-sign-out"></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">Admin</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <main id="child-view">
+    <h1>My Dashboard</h1>
+    <p class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur animi voluptatibus cum maxime distinctio
+      iste quod deleniti eius, autem voluptates cumque suscipit iure quasi eligendi ullam. Sapiente eligendi porro
+      reprehenderit corrupti error facilis quo, fugiat fugit? Maiores aliquam ad, molestiae iste nihil, commodi
+      doloremque tempore excepturi aut id ducimus unde?
+    </p>
+    <p class="copyright">
+      &copy; 2021 - <span>RUPP</span> All Rights Reserved.
+    </p>
+  </main>
+
+  <script src="JavaScript/sideBar.js"></script>
+</body>
+
+</html>
